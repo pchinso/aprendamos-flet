@@ -5,7 +5,10 @@ Un grupo de personas con intereses en flet para aprender desde 0  y ayudarnos co
 ## Particiantes
 
 Añade tu Usuario github y discord a la lista.
+
+
 [pchinso](https://github.com/pchinso) @chinso1984
+
 
 Punto comun para a comunicaciones en [MoureDev Discord - Aprendamos flet](https://discord.com/channels/729672926432985098/1164945939149115542)
 
