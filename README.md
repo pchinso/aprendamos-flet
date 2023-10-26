@@ -12,9 +12,10 @@ Añade tu Usuario github y discord a la lista.
 
 Punto comun para a comunicaciones en [MoureDev Discord - Aprendamos flet](https://discord.com/channels/729672926432985098/1164945939149115542)
 
-La idea es ir completando leccciones que podemos ir creando entre todos e
+Funcionamiento
 
-## Funcionamiento
+La idea es ir completando leccciones que podemos ir creando entre todos.
+
 
 1. Realizar un Fork del repositorio principal [aprendamos-flet](https://github.com/pchinso/aprendamos-flet)
    1. [Como hacer un fork y pull request](https://www.freecodecamp.org/espanol/news/como-hacer-tu-primer-pull-request-en-github/)
