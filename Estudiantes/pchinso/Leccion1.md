@@ -1,10 +1,16 @@
 # Instalacion y Hello World
 
+En funcion de tu sistema operativo realizar la instalacion de Flet y crear la primera app Hello-Flet
+
+Referencia:
+
+[Creating Flet apps in Python](https://flet.dev/docs/guides/python/getting-started)
+
 ## Windows Instalacion
 
 Crear virtual enviroment e instalar Flet
 
-Create a new virtual environment: 
+Create a new virtual environment:
 Navigate to the directory where you want to create your project and run the following command:
 
 ```sh
