@@ -161,3 +161,87 @@ ft.app(target=main, view=ft.AppView.WEB_BROWSER)
 ```
 
 ![Todo.py](./Todo.png)
+
+### Simple Form, properties visible  and disabled
+
+[Simple-Form](./Leccion1-Simple-Form.py)
+
+```python
+
+import flet as ft 
+
+def  main (page):
+
+  # disabled property individuallly
+  first_name = ft.TextField()
+  last_name = ft.TextField()
+  first_name.disabled = False
+  last_name.disabled = False
+  page.add(first_name, last_name)
+
+  # disabled property by container group
+  # first_name = ft.TextField()
+  # last_name = ft.TextField()
+  # c = ft.Column(controls=[
+  #     first_name,
+  #     last_name
+  # ])
+  # c.disabled = False
+  # page.add(c)
+  
+ft.app(target=main, view=ft.AppView.WEB_BROWSER)
+
+
+```
+
+### Control ref
+
+[Control-ref](./Leccion1-Control-ref.py)
+
+```python
+
+import flet as ft
+
+def main(page):
+    
+    # first_name = ft.TextField(label="First name", autofocus=True)
+    # last_name = ft.TextField(label="Last name")
+    # greetings = ft.Column()
+
+    # def btn_click(e):
+    #     greetings.controls.append(ft.Text(f"Hello, {first_name.value} {last_name.value}!"))
+    #     first_name.value = ""
+    #     last_name.value = ""
+    #     page.update()
+    #     first_name.focus()
+
+    # page.add(
+    #     first_name,
+    #     last_name,
+    #     ft.ElevatedButton("Say hello!", on_click=btn_click),
+    #     greetings,
+    # )
+
+    first_name = ft.Ref[ft.TextField]()
+    last_name = ft.Ref[ft.TextField]()
+    greetings = ft.Ref[ft.Column]()
+
+    def btn_click(e):
+        greetings.current.controls.append(
+            ft.Text(f"Hello, {first_name.current.value} {last_name.current.value}!")
+        )
+        first_name.current.value = ""
+        last_name.current.value = ""
+        page.update()
+        first_name.current.focus()
+
+    page.add(
+        ft.TextField(ref=first_name, label="First name", autofocus=True),
+        ft.TextField(ref=last_name, label="Last name"),
+        ft.ElevatedButton("Say hello!", on_click=btn_click),
+        ft.Column(ref=greetings),
+    )
+
+ft.app(target=main, view=ft.AppView.WEB_BROWSER)
+
+```
