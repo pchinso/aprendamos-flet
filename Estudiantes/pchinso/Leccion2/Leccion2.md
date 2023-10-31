@@ -126,3 +126,5 @@ def main(page:ft.Page):
 ft.app(target=main, view=ft.AppView.WEB_BROWSER)
 
 ```
+
+[continue CheckBox...](https://flet.dev/docs/guides/python/getting-user-input#checkbox)
