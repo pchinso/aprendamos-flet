@@ -1,0 +1,3 @@
+path/to/path1
+path/to/path2
+path/to/path3
